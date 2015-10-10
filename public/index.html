@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Iceberg Search</title>
+</head>
+<body>
+
+<div ng-controller="MainCtrl">
+
+	<h1>Iceberg Movies</h1>
+    <input id="search" type="text" /><br>
+    <select id="prop">
+        <option value="title">Title</option>
+        <option value="year">Year</option>
+        <option value="rating">Rating</option>
+    </select>
+    <h1 style="display: none">Results for search: <span id="query">--</span></h1>
+    <ul id="results"></ul>
+    <h2 id="message"></h2>
+
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.75/Bacon.min.js"></script>
+<script src="js/lib/Bacon.UI.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>
